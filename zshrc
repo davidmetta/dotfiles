@@ -39,4 +39,4 @@ if [ -f '/Users/davidmetta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/davi
 if [ -f '/Users/davidmetta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/davidmetta/google-cloud-sdk/completion.zsh.inc'; fi
 
 # z
-. ./z.sh
+. /Users/davidmetta/code/davidmetta/dotfiles/z.sh
