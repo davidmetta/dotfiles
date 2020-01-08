@@ -37,3 +37,6 @@ if [ -f '/Users/davidmetta/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/davi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/davidmetta/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/davidmetta/google-cloud-sdk/completion.zsh.inc'; fi
+
+# z
+. ./z.sh
