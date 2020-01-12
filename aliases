@@ -8,4 +8,4 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
 # Docker
 alias dkr="docker"
-alias dkr-c="docker-compose"
+alias dkrc="docker-compose"
