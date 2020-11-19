@@ -9,3 +9,8 @@ alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 # Docker
 alias dkr="docker"
 alias dkrc="docker-compose"
+
+alias dkcp='docker rm -f $(docker ps -a -q)'
+alias dkci='docker rmi -f $(docker images -a -q)'
+alias dkcn='docker network prune'
+alias dkcv='docker volume prune'
