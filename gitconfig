@@ -23,6 +23,7 @@
   dt  = difftool
   stat = !git --no-pager diff --stat
   pt = !git tag -l | xargs git tag -d && git fetch -t
+  tags = tag --sort=v:refname
 
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
