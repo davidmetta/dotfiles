@@ -40,3 +40,4 @@ if [ -f '/Users/davidmetta/google-cloud-sdk/completion.zsh.inc' ]; then . '/User
 
 # z
 . /Users/davidmetta/code/davidmetta/dotfiles/z.sh
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
