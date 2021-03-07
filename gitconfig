@@ -54,3 +54,5 @@
 [user]
 	email = davideliemetta@gmail.com
 	name = david metta
+[pull]
+	rebase = true
