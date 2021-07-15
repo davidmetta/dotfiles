@@ -33,6 +33,14 @@
 
   lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
+  sreset = !git reset --soft HEAD~1
+
+  ctag = "!f() { \
+           git add . && \
+           git commit -m \"chore: v$1\" && \
+           git tag -a v$1 -m \"version $1\" && \
+           git push origin master --follow-tags; \
+         }; f"
 
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
