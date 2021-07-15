@@ -24,25 +24,26 @@
   stat = !git --no-pager diff --stat
   pt = !git tag -l | xargs git tag -d && git fetch -t
   tags = tag --sort=v:refname
-
-  # Clean merged branches
-  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+  po = !git pull origin master
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   # lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
 
   lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
+  # reset last commit
   sreset = !git reset --soft HEAD~1
 
+  # Clean merged branches
+  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+
+  # add, commit, tag, and push
   ctag = "!f() { \
            git add . && \
            git commit -m \"chore: v$1\" && \
            git tag -a v$1 -m \"version $1\" && \
            git push origin master --follow-tags; \
          }; f"
-
-  po = !git pull origin master
 
   # Serve local repo. http://coderwall.com/p/eybtga
   # Then other can access via `git clone git://#{YOUR_IP_ADDRESS}/
