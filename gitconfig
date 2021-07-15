@@ -56,3 +56,5 @@
 	name = david metta
 [pull]
 	rebase = true
+[hub]
+	protocol = https

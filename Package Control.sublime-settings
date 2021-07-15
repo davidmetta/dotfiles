@@ -12,11 +12,12 @@
 		"Color Highlight",
 		"Emmet",
 		"ERB Snippets",
+		"Ethereum",
 		"Git",
 		"GitGutter",
 		"Package Control",
 		"SCSS",
 		"SublimeLinter",
 		"SublimeLinter-rubocop"
-	]
+	],
 }
